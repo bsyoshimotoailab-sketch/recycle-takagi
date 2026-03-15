@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>サービス | リサイクル高木</title>
+<meta name="description" content="リサイクル高木の買取サービス一覧。家電・家具・ブランド品・本・ゲームなど幅広く対応。出張買取も承ります。">
+<link rel="stylesheet" href="style.css">
+<style>
+  .page-hero {
+    background: linear-gradient(140deg, #4CAF50 0%, #8BC34A 55%, #C5E1A5 100%);
+    color: var(--white);
+    padding: 60px 24px 52px;
+    text-align: center;
+  }
+  .page-hero h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 900; margin-bottom: 10px; text-shadow: 0 2px 8px rgba(0,0,0,0.15); }
+  .page-hero p { opacity: 0.92; font-size: 1rem; }
+
+  .service-block { margin-bottom: 64px; }
+  .service-block h3 {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--green-dark);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--green-light);
+  }
+
+  .tag-list { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+  .tag {
+    background: var(--green-light);
+    color: var(--green-dark);
+    border-radius: 50px;
+    padding: 7px 18px;
+    font-size: 0.88rem;
+    font-weight: 700;
+  }
+
+  .notice-box {
+    background: var(--yellow-light);
+    border-left: 5px solid var(--yellow);
+    border-radius: var(--radius);
+    padding: 22px 28px;
+    margin-top: 48px;
+    font-size: 0.93rem;
+    line-height: 1.85;
+    color: #5D4037;
+  }
+  .notice-box strong { color: #BF360C; }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <img src="丸ロゴ完成.jpg" alt="リサイクル高木">
+      <span class="logo-text">
+        <span class="logo-sub">なんでも回収屋</span>
+        <span class="logo-main">リサイクル高木</span>
+      </span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="メニュー">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="mainNav">
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="service.html" class="active">サービス</a></li>
+        <li><a href="faq.html">よくある質問</a></li>
+        <li><a href="about.html">会社情報</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <h1>買取サービス一覧</h1>
+  <p>幅広いカテゴリに対応しています。まずはお気軽にご相談ください。</p>
+</div>
+
+<!-- MAIN -->
+<section class="bg-white">
+  <div class="inner">
+
+    <h2 class="section-title" style="margin-bottom:44px;">買取品目</h2>
+
+    <div class="service-block">
+      <h3>📺 家電製品</h3>
+      <div style="overflow-x:auto;">
+        <table class="service-table">
+          <thead>
+            <tr>
+              <th>品目</th>
+              <th>状態の目安</th>
+              <th>備考</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>テレビ（液晶・有機EL）</td><td>動作品優遇</td><td>40型以上は出張買取可</td></tr>
+            <tr><td>冷蔵庫・洗濯機</td><td>製造から10年以内推奨</td><td>出張買取対応</td></tr>
+            <tr><td>エアコン</td><td>動作確認必須</td><td>取外し工事は別途相談</td></tr>
+            <tr><td>電子レンジ・炊飯器</td><td>動作品</td><td>小型家電も可</td></tr>
+            <tr><td>パソコン・タブレット</td><td>起動確認</td><td>データ消去は当店で実施</td></tr>
+            <tr><td>スマートフォン</td><td>画面割れ要相談</td><td><span class="badge">高価買取</span></td></tr>
+            <tr><td>カメラ・レンズ</td><td>動作品・付属品あり優遇</td><td><span class="badge">高価買取</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="service-block">
+      <h3>🛋️ 家具・インテリア</h3>
+      <div style="overflow-x:auto;">
+        <table class="service-table">
+          <thead>
+            <tr><th>品目</th><th>状態の目安</th><th>備考</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>ソファ・ベッドフレーム</td><td>目立つ汚れ・破れなし</td><td>出張買取対応</td></tr>
+            <tr><td>ダイニングテーブル・椅子</td><td>傷・カビなし</td><td>セット優遇</td></tr>
+            <tr><td>収納棚・チェスト</td><td>引き出し動作確認</td><td>大型も相談可</td></tr>
+            <tr><td>照明・カーテン</td><td>動作品・目立つ汚れなし</td><td>—</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="service-block">
+      <h3>👜 ブランド品・貴金属</h3>
+      <div style="overflow-x:auto;">
+        <table class="service-table">
+          <thead>
+            <tr><th>品目</th><th>状態の目安</th><th>備考</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>ブランドバッグ（ルイヴィトン・グッチ等）</td><td>本物と確認できるもの</td><td><span class="badge">高価買取</span></td></tr>
+            <tr><td>腕時計（ロレックス・オメガ等）</td><td>動作品優遇・箱ありさらに優遇</td><td><span class="badge">高価買取</span></td></tr>
+            <tr><td>ジュエリー・アクセサリー</td><td>素材確認あり</td><td>金・プラチナ・ダイヤ優遇</td></tr>
+            <tr><td>財布・小物</td><td>使用感あっても査定可</td><td>—</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="service-block">
+      <h3>📚 本・メディア・ゲーム</h3>
+      <div class="tag-list">
+        <span class="tag">漫画・コミック</span>
+        <span class="tag">小説・文庫本</span>
+        <span class="tag">ゲームソフト（Switch・PS5等）</span>
+        <span class="tag">ゲーム機本体</span>
+        <span class="tag">CD・DVD・Blu-ray</span>
+        <span class="tag">レコード</span>
+        <span class="tag">トレーディングカード</span>
+      </div>
+    </div>
+
+    <div class="service-block">
+      <h3>🧸 ホビー・スポーツ・その他</h3>
+      <div class="tag-list">
+        <span class="tag">フィギュア・プラモデル</span>
+        <span class="tag">鉄道模型</span>
+        <span class="tag">自転車</span>
+        <span class="tag">釣り道具</span>
+        <span class="tag">ゴルフ用品</span>
+        <span class="tag">アウトドア用品</span>
+        <span class="tag">楽器</span>
+        <span class="tag">工具</span>
+        <span class="tag">ベビー用品</span>
+      </div>
+    </div>
+
+    <div class="notice-box">
+      <strong>⚠️ 買取できないもの（一例）</strong><br>
+      食品・医薬品・下着類・危険物・偽ブランド品・盗品疑いのあるもの・動物・植物など。<br>
+      不明な場合はお気軽にLINEでご相談ください。本人確認書類（免許証等）のご提示をお願いしています。
+    </div>
+
+    <!-- 出張買取 -->
+    <div style="margin-top:72px;">
+      <h2 class="section-title" style="margin-bottom:16px;">出張買取サービス</h2>
+      <p class="section-subtitle">大量・大型品はお家まで伺います（品川区内・近隣エリア対応）</p>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-icon">🚚</div>
+          <h3>無料出張・無料見積</h3>
+          <p>出張費・見積費は一切かかりません。品川区内および近隣区は当日対応可能な場合があります。</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📦</div>
+          <h3>まとめ買取で高査定</h3>
+          <p>引越しや遺品整理など大量の場合はまとめて査定。点数が多いほど有利な場合があります。</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">💰</div>
+          <h3>その場で現金お渡し</h3>
+          <p>査定額にご納得いただいた後、その場で現金をお渡しします。</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- LINE CTA -->
+<section class="contact-section">
+  <h2>売りたいものがあれば<br>まずLINEへ！</h2>
+  <p>写真を送るだけで無料査定。お気軽にどうぞ。</p>
+  <div class="line-contact-wrap">
+    <div class="line-btn-group">
+      <a href="https://line.me/R/ti/p/@436kheac" class="btn-line" target="_blank" rel="noopener">
+        <span class="line-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 4C13 4 4 11.8 4 21.4c0 8.4 7.4 15.4 17.4 16.8l.8 4.4c.2.8 1.2 1 1.8.4l5-4.8c.4 0 .8.1 1.2.1 11 0 18.8-7.4 18.8-17C49 11.8 35 4 24 4z" fill="#06C755"/>
+            <path d="M38.4 25.4h-5.8a.6.6 0 0 1-.6-.6v-9a.6.6 0 0 1 .6-.6h5.8c.3 0 .6.3.6.6v1.4c0 .3-.3.6-.6.6h-3.8v1.4h3.8c.3 0 .6.3.6.6v1.4c0 .3-.3.6-.6.6h-3.8v1.4h3.8c.3 0 .6.3.6.6v1.4c0 .3-.3.6-.6.6zm-8.6 0h-1.6a.6.6 0 0 1-.6-.6v-9c0-.3.3-.6.6-.6h1.6c.3 0 .6.3.6.6v9c0 .3-.3.6-.6.6zm-3.4 0h-5.8a.6.6 0 0 1-.6-.6v-9c0-.3.3-.6.6-.6h1.6c.3 0 .6.3.6.6v7h3.6c.3 0 .6.3.6.6v1.4c0 .3-.3.6-.6.6zm-8.6 0h-1.6a.6.6 0 0 1-.6-.6v-9c0-.3.3-.6.6-.6h1.6c.3 0 .6.3.6.6v9c0 .3-.3.6-.6.6z" fill="#fff"/>
+          </svg>
+        </span>
+        LINEで無料査定する
+      </a>
+      <span class="line-btn-sub">「リサイクル高木」で友だち検索</span>
+    </div>
+    <div class="qr-block">
+      <img src="line-qr.png" alt="リサイクル高木 LINE QRコード" class="qr-img" width="150" height="150">
+      <p class="qr-label">QRコードを読み取る</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <img src="丸ロゴ完成.jpg" alt="リサイクル高木" class="footer-logo">
+  <div class="footer-nav">
+    <a href="index.html">ホーム</a>
+    <a href="service.html">サービス</a>
+    <a href="faq.html">よくある質問</a>
+    <a href="about.html">会社情報</a>
+  </div>
+  髙木商会 ／ 〒142-0054 東京都品川区西中延１丁目５－２１<br>
+  TEL: <a href="tel:09083131709" style="color:inherit;">090-8313-1709</a> ／ <a href="tel:0337837807" style="color:inherit;">03-3783-7807</a><br>
+  営業時間 8:00〜20:00 ／ 年中無休
+  <div class="copy">&copy; 2026 髙木商会 リサイクル高木. All rights reserved.</div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const nav = document.getElementById('mainNav');
+  toggle.addEventListener('click', () => {
+    toggle.classList.toggle('open');
+    nav.classList.toggle('open');
+  });
+</script>
+</body>
+</html>

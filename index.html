@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>リサイクル高木 | 品川区の出張買取・リサイクルショップ</title>
+<meta name="description" content="品川区のリサイクルショップ「リサイクル高木」。家電・家具・ブランド品など幅広く買取。LINEで写真を送るだけで無料査定！年中無休 8:00〜20:00。">
+<link rel="stylesheet" href="style.css">
+<style>
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+  min-height: 92vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0;
+}
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('S__36306959_0.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+.hero-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    160deg,
+    rgba(27,80,10,0.78) 0%,
+    rgba(50,130,20,0.62) 50%,
+    rgba(20,70,10,0.72) 100%
+  );
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 80px 24px 100px;
+  max-width: 780px;
+  margin: 0 auto;
+}
+.hero-logo-img {
+  max-width: 380px;
+  width: 90%;
+  margin: 0 auto 28px;
+  filter: drop-shadow(0 4px 16px rgba(0,0,0,0.35));
+}
+.hero-tagline {
+  color: #fff;
+  font-size: clamp(1.05rem, 2.8vw, 1.3rem);
+  line-height: 2;
+  margin-bottom: 12px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  font-weight: 500;
+}
+.hero-tagline strong {
+  background: rgba(255,255,255,0.18);
+  border-radius: 6px;
+  padding: 2px 10px;
+  font-weight: 800;
+}
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 36px;
+  margin-top: 4px;
+}
+.hero-badge {
+  background: rgba(255,255,255,0.18);
+  border: 2px solid rgba(255,255,255,0.4);
+  color: #fff;
+  border-radius: 50px;
+  padding: 6px 18px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  backdrop-filter: blur(4px);
+}
+.hero-scroll {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  color: rgba(255,255,255,0.65);
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  animation: bounce 2s infinite;
+}
+.hero-scroll::after {
+  content: '';
+  width: 2px;
+  height: 32px;
+  background: rgba(255,255,255,0.45);
+  border-radius: 2px;
+}
+@keyframes bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50%       { transform: translateX(-50%) translateY(6px); }
+}
+
+/* ===== HOURS STRIP ===== */
+.hours-strip {
+  background: var(--green-main);
+  color: #fff;
+  padding: 20px 24px;
+  text-align: center;
+}
+.hours-strip-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.hours-strip .hs-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.hours-strip .hs-icon { font-size: 1.3rem; }
+.hours-strip .hs-divider { width: 1px; height: 28px; background: rgba(255,255,255,0.35); }
+
+/* ===== PHOTO SERVICES SECTION ===== */
+.services-photo-section {
+  background: var(--green-pale);
+  padding: 88px 24px;
+}
+.services-photo-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: center;
+}
+.services-photo-img {
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 12px 48px rgba(0,0,0,0.15);
+  aspect-ratio: 4/3;
+}
+.services-photo-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+.services-photo-img:hover img { transform: scale(1.03); }
+.services-photo-text {}
+.services-photo-text .eyebrow {
+  display: inline-block;
+  background: var(--green-main);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  padding: 5px 16px;
+  border-radius: 50px;
+  margin-bottom: 16px;
+}
+.services-photo-text h2 {
+  font-size: clamp(1.6rem, 3.5vw, 2.1rem);
+  font-weight: 900;
+  color: var(--green-dark);
+  line-height: 1.35;
+  margin-bottom: 20px;
+}
+.services-photo-text p {
+  color: var(--text-light);
+  font-size: 1rem;
+  line-height: 1.9;
+  margin-bottom: 28px;
+}
+.item-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+.item-tag {
+  background: var(--white);
+  border: 2px solid var(--green-light);
+  color: var(--green-dark);
+  border-radius: 50px;
+  padding: 6px 16px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+/* ===== HOW TO ===== */
+.howto-section {
+  background: var(--white);
+  padding: 88px 24px;
+}
+.howto-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+.howto-step {
+  background: var(--green-pale);
+  border-radius: 24px;
+  padding: 40px 28px 36px;
+  text-align: center;
+  position: relative;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.howto-step:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(124,179,66,0.2);
+}
+.howto-num {
+  width: 60px; height: 60px;
+  background: var(--green-main);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 1.6rem;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  box-shadow: 0 6px 18px rgba(124,179,66,0.45);
+}
+.howto-step-icon { font-size: 2.2rem; margin-bottom: 12px; }
+.howto-step h4 { font-size: 1.05rem; font-weight: 800; color: var(--green-dark); margin-bottom: 8px; }
+.howto-step p { font-size: 0.88rem; color: var(--text-light); line-height: 1.75; }
+.howto-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--green-light);
+  font-size: 2rem;
+  padding-top: 20px;
+}
+
+/* ===== OWNER SECTION ===== */
+.owner-section-home {
+  background: var(--green-pale);
+  padding: 88px 24px;
+}
+.owner-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+.owner-photo-block {
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 12px 48px rgba(0,0,0,0.14);
+  aspect-ratio: 3/4;
+  max-height: 520px;
+}
+.owner-photo-block img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+.owner-text-block .eyebrow {
+  display: inline-block;
+  background: var(--green-main);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  padding: 5px 16px;
+  border-radius: 50px;
+  margin-bottom: 16px;
+}
+.owner-text-block h2 {
+  font-size: clamp(1.6rem, 3vw, 2rem);
+  font-weight: 900;
+  color: var(--green-dark);
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+.owner-text-block .owner-name-big {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--green-dark);
+  margin-bottom: 4px;
+}
+.owner-text-block .owner-role {
+  font-size: 0.88rem;
+  color: var(--text-light);
+  margin-bottom: 20px;
+}
+.owner-text-block p {
+  color: var(--text-light);
+  font-size: 1rem;
+  line-height: 1.95;
+  margin-bottom: 20px;
+}
+.owner-text-block .quote-block {
+  border-left: 4px solid var(--green-main);
+  padding: 12px 20px;
+  background: var(--white);
+  border-radius: 0 14px 14px 0;
+  font-style: italic;
+  color: var(--green-dark);
+  font-weight: 700;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+
+/* ===== FEATURE CARDS ===== */
+.features-section {
+  background: var(--white);
+  padding: 88px 24px;
+}
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.feature-card {
+  background: var(--green-pale);
+  border-radius: 24px;
+  padding: 36px 28px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 36px rgba(124,179,66,0.18);
+}
+.feature-card .f-icon { font-size: 2.8rem; margin-bottom: 14px; }
+.feature-card h3 { font-size: 1.05rem; font-weight: 800; color: var(--green-dark); margin-bottom: 8px; }
+.feature-card p { font-size: 0.9rem; color: var(--text-light); line-height: 1.7; }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 820px) {
+  .services-photo-inner { grid-template-columns: 1fr; gap: 32px; }
+  .owner-inner { grid-template-columns: 1fr; gap: 36px; }
+  .owner-photo-block { aspect-ratio: 4/3; max-height: 340px; }
+  .howto-steps { grid-template-columns: 1fr; max-width: 380px; }
+  .hero { min-height: 75vh; }
+  .hero-content { padding: 60px 20px 80px; }
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <img src="丸ロゴ完成.jpg" alt="リサイクル高木">
+      <span class="logo-text">
+        <span class="logo-sub">なんでも回収屋</span>
+        <span class="logo-main">リサイクル高木</span>
+      </span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="メニュー">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="mainNav">
+      <ul>
+        <li><a href="index.html" class="active">ホーム</a></li>
+        <li><a href="service.html">サービス</a></li>
+        <li><a href="faq.html">よくある質問</a></li>
+        <li><a href="about.html">会社情報</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <img src="横長ロゴ完成.jpg" alt="リサイクル高木" class="hero-logo-img">
+    <p class="hero-tagline">
+      家電・家具・ブランド品など<br>
+      なんでも<strong>無料査定</strong>します！<br>
+      LINEで写真を送るだけでOK
+    </p>
+    <div class="hero-badges">
+      <span class="hero-badge">📅 年中無休</span>
+      <span class="hero-badge">🕗 8:00〜20:00</span>
+      <span class="hero-badge">🚚 出張買取対応</span>
+      <span class="hero-badge">💰 その場で現金払い</span>
+    </div>
+    <a href="https://line.me/R/ti/p/@436kheac" class="btn-line" target="_blank" rel="noopener">
+      <span class="line-icon">
+        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M24 4C13 4 4 11.8 4 21.4c0 8.4 7.4 15.4 17.4 16.8l.8 4.4c.2.8 1.2 1 1.8.4l5-4.8c.4 0 .8.1 1.2.1 11 0 18.8-7.4 18.8-17C49 11.8 35 4 24 4z" fill="#06C755"/>
+          <path d="M38.4 25.4h-5.8a.6.6 0 0 1-.6-.6v-9a.6.6 0 0 1 .6-.6h5.8c.3 0 .6.3.6.6v1.4c0 .3-.3.6-.6.6h-3.8v1.4h3.8c.3 0 .6.3.6.6v1.4c0 .3-.3.6-.6.6h-3.8v1.4h3.8c.3 0 .6.3.6.6v1.4c0 .3-.3.6-.6.6zm-8.6 0h-1.6a.6.6 0 0 1-.6-.6v-9c0-.3.3-.6.6-.6h1.6c.3 0 .6.3.6.6v9c0 .3-.3.6-.6.6zm-3.4 0h-5.8a.6.6 0 0 1-.6-.6v-9c0-.3.3-.6.6-.6h1.6c.3 0 .6.3.6.6v7h3.6c.3 0 .6.3.6.6v1.4c0 .3-.3.6-.6.6zm-8.6 0h-1.6a.6.6 0 0 1-.6-.6v-9c0-.3.3-.6.6-.6h1.6c.3 0 .6.3.6.6v9c0 .3-.3.6-.6.6z" fill="#fff"/>
+        </svg>
+      </span>
+      LINEで無料査定する
+    </a>
+  </div>
+  <div class="hero-scroll">SCROLL</div>
+</section>
+
+<!-- ===== HOURS STRIP ===== -->
+<div class="hours-strip">
+  <div class="hours-strip-inner">
+    <div class="hs-item"><span class="hs-icon">🕗</span> 営業時間 8:00 〜 20:00</div>
+    <div class="hs-divider"></div>
+    <div class="hs-item"><span class="hs-icon">📅</span> 年中無休</div>
+    <div class="hs-divider"></div>
+    <div class="hs-item"><span class="hs-icon">📍</span> 品川区西中延</div>
+  </div>
+</div>
+
+<!-- ===== SERVICES WITH PHOTO ===== -->
+<section class="services-photo-section">
+  <div class="services-photo-inner">
+    <div class="services-photo-img">
+      <img src="S__36306960_0.jpg" alt="買取品目イメージ">
+    </div>
+    <div class="services-photo-text">
+      <span class="eyebrow">BUY OUT SERVICE</span>
+      <h2>どんなものでも<br>まずはご相談ください</h2>
+      <p>家電から家具、ブランド品、本・ゲームまで幅広く買取対応。状態が悪くても、付属品がなくても査定しますので、お気軽にご相談ください。</p>
+      <div class="item-tags">
+        <span class="item-tag">📺 家電製品</span>
+        <span class="item-tag">🛋️ 家具</span>
+        <span class="item-tag">👜 ブランド品</span>
+        <span class="item-tag">📚 本・ゲーム</span>
+        <span class="item-tag">🧸 ホビー</span>
+        <span class="item-tag">🚴 自転車</span>
+        <span class="item-tag">💎 貴金属</span>
+        <span class="item-tag">📷 カメラ</span>
+      </div>
+      <a href="service.html" class="btn-green">買取品目の詳細を見る →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOW TO ===== -->
+<section class="howto-section">
+  <div style="max-width:1100px; margin:0 auto;">
+    <h2 class="section-title">買取の流れ</h2>
+    <p class="section-subtitle">たった3ステップで簡単査定</p>
+    <div class="howto-steps">
+      <div class="howto-step">
+        <div class="howto-num">1</div>
+        <div class="howto-step-icon">📸</div>
+        <h4>LINEで写真送付</h4>
+        <p>売りたい品物の写真を撮って、LINEで送るだけ。難しい操作は一切なし！</p>
+      </div>
+      <div class="howto-step">
+        <div class="howto-num">2</div>
+        <div class="howto-step-icon">✅</div>
+        <h4>無料査定</h4>
+        <p>スタッフが迅速に確認し、査定額をご連絡します。もちろん完全無料！</p>
+      </div>
+      <div class="howto-step">
+        <div class="howto-num">3</div>
+        <div class="howto-step-icon">💴</div>
+        <h4>その場で現金払い</h4>
+        <p>ご納得いただけたら、その場ですぐに現金をお渡しします。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== OWNER INTRODUCTION ===== -->
+<section class="owner-section-home">
+  <div class="owner-inner">
+    <div class="owner-photo-block">
+      <img src="S__36306961_0.jpg" alt="店主 髙木幸仁">
+    </div>
+    <div class="owner-text-block">
+      <span class="eyebrow">OWNER'S MESSAGE</span>
+      <div class="owner-name-big">髙木 幸仁</div>
+      <div class="owner-role">髙木商会 代表 ／ リサイクル高木 店主</div>
+      <div class="quote-block">
+        「もう使わないもの」が<br>誰かの「大切なもの」になる。
+      </div>
+      <p>
+        リサイクル高木は、品川区を中心に地域の皆さまの「捨てたくないけど使わないもの」をお引き取りし、次の使い手へとつないでいます。
+      </p>
+      <p>
+        どんな品物でも、まずはLINEでお気軽にご相談ください。査定は<strong style="color:var(--green-dark);">いつでも完全無料</strong>です。
+      </p>
+      <a href="https://line.me/R/ti/p/@436kheac" class="btn-line" target="_blank" rel="noopener" style="font-size:1.05rem; padding:16px 32px;">
+        <span class="line-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 4C13 4 4 11.8 4 21.4c0 8.4 7.4 15.4 17.4 16.8l.8 4.4c.2.8 1.2 1 1.8.4l5-4.8c.4 0 .8.1 1.2.1 11 0 18.8-7.4 18.8-17C49 11.8 35 4 24 4z" fill="#06C755"/>
+            <path d="M38.4 25.4h-5.8a.6.6 0 0 1-.6-.6v-9a.6.6 0 0 1 .6-.6h5.8c.3 0 .6.3.6.6v1.4c0 .3-.3.6-.6.6h-3.8v1.4h3.8c.3 0 .6.3.6.6v1.4c0 .3-.3.6-.6.6h-3.8v1.4h3.8c.3 0 .6.3.6.6v1.4c0 .3-.3.6-.6.6zm-8.6 0h-1.6a.6.6 0 0 1-.6-.6v-9c0-.3.3-.6.6-.6h1.6c.3 0 .6.3.6.6v9c0 .3-.3.6-.6.6zm-3.4 0h-5.8a.6.6 0 0 1-.6-.6v-9c0-.3.3-.6.6-.6h1.6c.3 0 .6.3.6.6v7h3.6c.3 0 .6.3.6.6v1.4c0 .3-.3.6-.6.6zm-8.6 0h-1.6a.6.6 0 0 1-.6-.6v-9c0-.3.3-.6.6-.6h1.6c.3 0 .6.3.6.6v9c0 .3-.3.6-.6.6z" fill="#fff"/>
+          </svg>
+        </span>
+        気軽にLINEで相談する
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FEATURES ===== -->
+<section class="features-section">
+  <div style="max-width:1100px; margin:0 auto;">
+    <h2 class="section-title">リサイクル高木が選ばれる理由</h2>
+    <p class="section-subtitle">安心・丁寧・スピーディーな対応をお約束します</p>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="f-icon">🆓</div>
+        <h3>査定は完全無料</h3>
+        <p>店頭・LINE・出張すべて無料。断っても一切費用はかかりません。</p>
+      </div>
+      <div class="feature-card">
+        <div class="f-icon">⚡</div>
+        <h3>最短即日対応</h3>
+        <p>LINEで写真を送れば、最短即日で査定額をご連絡します。</p>
+      </div>
+      <div class="feature-card">
+        <div class="f-icon">🚚</div>
+        <h3>出張買取無料</h3>
+        <p>大型家電・家具もお家まで伺います。品川区内は当日も対応可能。</p>
+      </div>
+      <div class="feature-card">
+        <div class="f-icon">💴</div>
+        <h3>その場で現金払い</h3>
+        <p>査定金額にご納得いただければ、その場ですぐ現金をお渡しします。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LINE CTA ===== -->
+<section class="contact-section">
+  <h2>まずはLINEでご相談ください</h2>
+  <p>査定・お問い合わせは無料。写真を送るだけで最短即日回答！</p>
+  <div class="line-contact-wrap">
+    <div class="line-btn-group">
+      <a href="https://line.me/R/ti/p/@436kheac" class="btn-line" target="_blank" rel="noopener">
+        <span class="line-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 4C13 4 4 11.8 4 21.4c0 8.4 7.4 15.4 17.4 16.8l.8 4.4c.2.8 1.2 1 1.8.4l5-4.8c.4 0 .8.1 1.2.1 11 0 18.8-7.4 18.8-17C49 11.8 35 4 24 4z" fill="#06C755"/>
+            <path d="M38.4 25.4h-5.8a.6.6 0 0 1-.6-.6v-9a.6.6 0 0 1 .6-.6h5.8c.3 0 .6.3.6.6v1.4c0 .3-.3.6-.6.6h-3.8v1.4h3.8c.3 0 .6.3.6.6v1.4c0 .3-.3.6-.6.6h-3.8v1.4h3.8c.3 0 .6.3.6.6v1.4c0 .3-.3.6-.6.6zm-8.6 0h-1.6a.6.6 0 0 1-.6-.6v-9c0-.3.3-.6.6-.6h1.6c.3 0 .6.3.6.6v9c0 .3-.3.6-.6.6zm-3.4 0h-5.8a.6.6 0 0 1-.6-.6v-9c0-.3.3-.6.6-.6h1.6c.3 0 .6.3.6.6v7h3.6c.3 0 .6.3.6.6v1.4c0 .3-.3.6-.6.6zm-8.6 0h-1.6a.6.6 0 0 1-.6-.6v-9c0-.3.3-.6.6-.6h1.6c.3 0 .6.3.6.6v9c0 .3-.3.6-.6.6z" fill="#fff"/>
+          </svg>
+        </span>
+        LINEで今すぐ相談する
+      </a>
+      <span class="line-btn-sub">「リサイクル高木」で友だち検索</span>
+    </div>
+    <div class="qr-block">
+      <img src="line-qr.png" alt="リサイクル高木 LINE QRコード" class="qr-img" width="150" height="150">
+      <p class="qr-label">QRコードを読み取る</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <img src="丸ロゴ完成.jpg" alt="リサイクル高木" class="footer-logo">
+  <div class="footer-nav">
+    <a href="index.html">ホーム</a>
+    <a href="service.html">サービス</a>
+    <a href="faq.html">よくある質問</a>
+    <a href="about.html">会社情報</a>
+  </div>
+  髙木商会 ／ 〒142-0054 東京都品川区西中延１丁目５－２１<br>
+  TEL: <a href="tel:09083131709" style="color:inherit;">090-8313-1709</a> ／ <a href="tel:0337837807" style="color:inherit;">03-3783-7807</a><br>
+  営業時間 8:00〜20:00 ／ 年中無休
+  <div class="copy">&copy; 2026 髙木商会 リサイクル高木. All rights reserved.</div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const nav = document.getElementById('mainNav');
+  toggle.addEventListener('click', () => {
+    toggle.classList.toggle('open');
+    nav.classList.toggle('open');
+  });
+</script>
+</body>
+</html>

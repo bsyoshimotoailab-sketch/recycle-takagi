@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>会社情報 | リサイクル高木</title>
+<meta name="description" content="髙木商会 リサイクル高木の会社情報。〒142-0054 東京都品川区西中延１丁目５－２１。年中無休 8:00〜20:00。">
+<link rel="stylesheet" href="style.css">
+<style>
+  .page-hero {
+    background: linear-gradient(140deg, #4CAF50 0%, #8BC34A 55%, #C5E1A5 100%);
+    color: var(--white);
+    padding: 60px 24px 52px;
+    text-align: center;
+  }
+  .page-hero h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 900; margin-bottom: 10px; text-shadow: 0 2px 8px rgba(0,0,0,0.15); }
+  .page-hero p { opacity: 0.92; font-size: 1rem; }
+
+  .info-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+
+  .access-list { display: flex; flex-direction: column; gap: 10px; margin-top: 8px; }
+  .access-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  .access-item .icon-badge {
+    background: var(--green-main);
+    color: var(--white);
+    border-radius: 6px;
+    padding: 3px 10px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    white-space: nowrap;
+    flex-shrink: 0;
+    margin-top: 3px;
+  }
+
+  .hours-week {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+    margin-top: 8px;
+  }
+  @media (max-width: 480px) {
+    .hours-week { grid-template-columns: repeat(4, 1fr); }
+  }
+  .day-box {
+    border-radius: 10px;
+    padding: 12px 4px;
+    text-align: center;
+  }
+  .day-box .day-name { font-weight: 800; font-size: 1.05rem; margin-bottom: 6px; }
+  .day-box .day-time { font-size: 0.73rem; color: var(--text-light); line-height: 1.4; }
+  .day-box.open { background: var(--green-pale); border: 2px solid var(--green-light); color: var(--green-dark); }
+
+  .about-grid-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+  }
+  @media (max-width: 700px) {
+    .about-grid-wrap { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <img src="丸ロゴ完成.jpg" alt="リサイクル高木">
+      <span class="logo-text">
+        <span class="logo-sub">なんでも回収屋</span>
+        <span class="logo-main">リサイクル高木</span>
+      </span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="メニュー">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="mainNav">
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="service.html">サービス</a></li>
+        <li><a href="faq.html">よくある質問</a></li>
+        <li><a href="about.html" class="active">会社情報</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <h1>会社情報</h1>
+  <p>東京都品川区でお待ちしております</p>
+</div>
+
+<!-- COMPANY INFO -->
+<section class="bg-white">
+  <div class="inner">
+    <h2 class="section-title">基本情報</h2>
+    <p class="section-subtitle" style="margin-bottom:36px;">&nbsp;</p>
+
+    <div class="about-grid-wrap">
+      <!-- INFO TABLE -->
+      <div class="info-card">
+        <table class="info-table">
+          <tr>
+            <th>会社名</th>
+            <td>髙木商会</td>
+          </tr>
+          <tr>
+            <th>屋号</th>
+            <td>リサイクル高木</td>
+          </tr>
+          <tr>
+            <th>所在地</th>
+            <td>〒142-0054<br>東京都品川区西中延１丁目５－２１</td>
+          </tr>
+          <tr>
+            <th>TEL</th>
+            <td>
+              <a href="tel:09083131709" style="color:var(--green-dark); font-weight:700;">090-8313-1709</a><br>
+              <a href="tel:0337837807" style="color:var(--green-dark); font-weight:700;">03-3783-7807</a>
+            </td>
+          </tr>
+          <tr>
+            <th>LINE</th>
+            <td>
+              <div style="display:flex; align-items:center; gap:14px; flex-wrap:wrap;">
+                <span>「リサイクル高木」で検索</span>
+                <img src="line-qr.png" alt="LINE QRコード" width="150" height="150"
+                  style="width:150px; height:150px; object-fit:contain; border-radius:10px; background:#fff; padding:5px; box-shadow:0 2px 10px rgba(0,0,0,0.15); box-sizing:border-box; display:block;">
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>営業時間</th>
+            <td><strong style="color:var(--green-dark);">8:00 〜 20:00</strong><br>年中無休</td>
+          </tr>
+          <tr>
+            <th>古物商許可</th>
+            <td>東京都公安委員会 第XXXXXXXXXX号</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- MAP -->
+      <div>
+        <div class="map-wrap">
+          <iframe
+            src="https://www.google.com/maps?q=東京都品川区西中延1丁目5-21&output=embed"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="髙木商会 地図">
+          </iframe>
+        </div>
+        <p style="font-size:0.82rem; color:var(--text-light); margin-top:10px; text-align:center;">
+          〒142-0054 東京都品川区西中延１丁目５－２１
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOURS -->
+<section class="bg-pale">
+  <div class="inner">
+    <h2 class="section-title">営業時間</h2>
+    <p class="section-subtitle">年中無休で営業しております</p>
+
+    <div style="max-width: 620px; margin: 0 auto;">
+      <div class="hours-week">
+        <div class="day-box open"><div class="day-name">月</div><div class="day-time">8:00〜20:00</div></div>
+        <div class="day-box open"><div class="day-name">火</div><div class="day-time">8:00〜20:00</div></div>
+        <div class="day-box open"><div class="day-name">水</div><div class="day-time">8:00〜20:00</div></div>
+        <div class="day-box open"><div class="day-name">木</div><div class="day-time">8:00〜20:00</div></div>
+        <div class="day-box open"><div class="day-name">金</div><div class="day-time">8:00〜20:00</div></div>
+        <div class="day-box open"><div class="day-name">土</div><div class="day-time">8:00〜20:00</div></div>
+        <div class="day-box open"><div class="day-name">日</div><div class="day-time">8:00〜20:00</div></div>
+      </div>
+      <div style="text-align:center; margin-top:20px; font-size:0.88rem; color:var(--text-light);">
+        ※ 臨時休業の場合はLINEにてお知らせします
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OWNER / ABOUT -->
+<section class="bg-white">
+  <div class="inner">
+    <h2 class="section-title">お店について</h2>
+    <p class="section-subtitle" style="margin-bottom:40px;">&nbsp;</p>
+
+    <div class="owner-section">
+      <div class="owner-photo-wrap">
+        <img src="幸仁白T.png" alt="店主 髙木幸仁" class="owner-photo">
+      </div>
+      <div class="owner-text">
+        <div class="owner-name">髙木 幸仁</div>
+        <div class="owner-title">髙木商会 代表 ／ リサイクル高木 店主</div>
+        <p class="owner-message">
+          「もう使わないもの」が誰かの「大切なもの」になる。<br><br>
+          リサイクル高木は、品川区で地域の皆さまのリサイクルをお手伝いしてきました。
+          どんなものでもまずはご相談ください。査定はいつでも<strong>完全無料</strong>。
+          お客様のご都合に合わせて丁寧に対応いたします。
+        </p>
+      </div>
+    </div>
+
+    <div class="card-grid" style="margin-top: 52px;">
+      <div class="card">
+        <div class="card-icon">🤝</div>
+        <h3>地域密着の買取店</h3>
+        <p>品川区を中心に長年営業。地域の皆さまに信頼していただけるお店を目指しています。</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔒</div>
+        <h3>安心の古物商許可店</h3>
+        <p>東京都公安委員会の古物商許可を取得。法令を遵守した安全な取引を行っています。</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🌱</div>
+        <h3>SDGsへの取り組み</h3>
+        <p>物を大切にする文化を広め、ごみの削減と資源の有効活用に貢献しています。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LINE CTA -->
+<section class="contact-section">
+  <h2>LINEでいつでもご連絡を</h2>
+  <p>査定・ご質問・出張のご依頼など<br>なんでもお気軽にどうぞ。</p>
+  <div class="line-contact-wrap">
+    <div class="line-btn-group">
+      <a href="https://line.me/R/ti/p/@436kheac" class="btn-line" target="_blank" rel="noopener">
+        <span class="line-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 4C13 4 4 11.8 4 21.4c0 8.4 7.4 15.4 17.4 16.8l.8 4.4c.2.8 1.2 1 1.8.4l5-4.8c.4 0 .8.1 1.2.1 11 0 18.8-7.4 18.8-17C49 11.8 35 4 24 4z" fill="#06C755"/>
+            <path d="M38.4 25.4h-5.8a.6.6 0 0 1-.6-.6v-9a.6.6 0 0 1 .6-.6h5.8c.3 0 .6.3.6.6v1.4c0 .3-.3.6-.6.6h-3.8v1.4h3.8c.3 0 .6.3.6.6v1.4c0 .3-.3.6-.6.6h-3.8v1.4h3.8c.3 0 .6.3.6.6v1.4c0 .3-.3.6-.6.6zm-8.6 0h-1.6a.6.6 0 0 1-.6-.6v-9c0-.3.3-.6.6-.6h1.6c.3 0 .6.3.6.6v9c0 .3-.3.6-.6.6zm-3.4 0h-5.8a.6.6 0 0 1-.6-.6v-9c0-.3.3-.6.6-.6h1.6c.3 0 .6.3.6.6v7h3.6c.3 0 .6.3.6.6v1.4c0 .3-.3.6-.6.6zm-8.6 0h-1.6a.6.6 0 0 1-.6-.6v-9c0-.3.3-.6.6-.6h1.6c.3 0 .6.3.6.6v9c0 .3-.3.6-.6.6z" fill="#fff"/>
+          </svg>
+        </span>
+        LINEでお問い合わせ
+      </a>
+      <span class="line-btn-sub">「リサイクル高木」で友だち検索</span>
+    </div>
+    <div class="qr-block">
+      <img src="line-qr.png" alt="リサイクル高木 LINE QRコード" class="qr-img" width="150" height="150">
+      <p class="qr-label">QRコードを読み取る</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <img src="丸ロゴ完成.jpg" alt="リサイクル高木" class="footer-logo">
+  <div class="footer-nav">
+    <a href="index.html">ホーム</a>
+    <a href="service.html">サービス</a>
+    <a href="faq.html">よくある質問</a>
+    <a href="about.html">会社情報</a>
+  </div>
+  髙木商会 ／ 〒142-0054 東京都品川区西中延１丁目５－２１<br>
+  TEL: <a href="tel:09083131709" style="color:inherit;">090-8313-1709</a> ／ <a href="tel:0337837807" style="color:inherit;">03-3783-7807</a><br>
+  営業時間 8:00〜20:00 ／ 年中無休
+  <div class="copy">&copy; 2026 髙木商会 リサイクル高木. All rights reserved.</div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const nav = document.getElementById('mainNav');
+  toggle.addEventListener('click', () => {
+    toggle.classList.toggle('open');
+    nav.classList.toggle('open');
+  });
+</script>
+</body>
+</html>
