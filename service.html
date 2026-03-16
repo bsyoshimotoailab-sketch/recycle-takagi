@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>サービス | リサイクル高木</title>
-<meta name="description" content="リサイクル高木の買取サービス一覧。家電・家具・ブランド品・本・ゲームなど幅広く対応。出張買取も承ります。">
+<title>サービス・料金 | リサイクル高木</title>
+<meta name="description" content="リサイクル高木のサービスと料金案内。遺品整理・不用品回収・引越し前片付けに対応。品川区・東京23区内は出張費無料。軽トラ1台分15,000円〜。">
 <link rel="stylesheet" href="style.css">
 <style>
   .page-hero {
@@ -50,6 +50,40 @@
     color: #5D4037;
   }
   .notice-box strong { color: #BF360C; }
+
+  .price-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 0.95rem;
+  }
+  .price-table th {
+    background: var(--green-main);
+    color: #fff;
+    padding: 12px 16px;
+    text-align: left;
+    font-weight: 800;
+  }
+  .price-table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--green-light);
+    vertical-align: middle;
+  }
+  .price-table tr:last-child td { border-bottom: none; }
+  .price-table tr:nth-child(even) td { background: var(--green-pale); }
+  .price-table .price-val {
+    font-weight: 900;
+    color: var(--green-dark);
+    font-size: 1.05rem;
+    white-space: nowrap;
+  }
+  .price-notes {
+    margin-top: 16px;
+    font-size: 0.88rem;
+    color: var(--text-light);
+    line-height: 1.85;
+  }
+  .price-notes li { margin-bottom: 4px; }
 </style>
 </head>
 <body>
@@ -80,127 +114,144 @@
 
 <!-- PAGE HERO -->
 <div class="page-hero">
-  <h1>買取サービス一覧</h1>
-  <p>幅広いカテゴリに対応しています。まずはお気軽にご相談ください。</p>
+  <h1>サービス・料金案内</h1>
+  <p>遺品整理・不用品回収・引越し前片付け。現地に直接お伺いします。</p>
 </div>
 
 <!-- MAIN -->
 <section class="bg-white">
   <div class="inner">
 
-    <h2 class="section-title" style="margin-bottom:44px;">買取品目</h2>
+    <h2 class="section-title" style="margin-bottom:44px;">対応サービス</h2>
 
+    <!-- 遺品整理 -->
     <div class="service-block">
-      <h3>📺 家電製品</h3>
-      <div style="overflow-x:auto;">
-        <table class="service-table">
-          <thead>
-            <tr>
-              <th>品目</th>
-              <th>状態の目安</th>
-              <th>備考</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>テレビ（液晶・有機EL）</td><td>動作品優遇</td><td>40型以上は出張買取可</td></tr>
-            <tr><td>冷蔵庫・洗濯機</td><td>製造から10年以内推奨</td><td>出張買取対応</td></tr>
-            <tr><td>エアコン</td><td>動作確認必須</td><td>取外し工事は別途相談</td></tr>
-            <tr><td>電子レンジ・炊飯器</td><td>動作品</td><td>小型家電も可</td></tr>
-            <tr><td>パソコン・タブレット</td><td>起動確認</td><td>データ消去は当店で実施</td></tr>
-            <tr><td>スマートフォン</td><td>画面割れ要相談</td><td><span class="badge">高価買取</span></td></tr>
-            <tr><td>カメラ・レンズ</td><td>動作品・付属品あり優遇</td><td><span class="badge">高価買取</span></td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <div class="service-block">
-      <h3>🛋️ 家具・インテリア</h3>
-      <div style="overflow-x:auto;">
-        <table class="service-table">
-          <thead>
-            <tr><th>品目</th><th>状態の目安</th><th>備考</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>ソファ・ベッドフレーム</td><td>目立つ汚れ・破れなし</td><td>出張買取対応</td></tr>
-            <tr><td>ダイニングテーブル・椅子</td><td>傷・カビなし</td><td>セット優遇</td></tr>
-            <tr><td>収納棚・チェスト</td><td>引き出し動作確認</td><td>大型も相談可</td></tr>
-            <tr><td>照明・カーテン</td><td>動作品・目立つ汚れなし</td><td>—</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <div class="service-block">
-      <h3>👜 ブランド品・貴金属</h3>
-      <div style="overflow-x:auto;">
-        <table class="service-table">
-          <thead>
-            <tr><th>品目</th><th>状態の目安</th><th>備考</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>ブランドバッグ（ルイヴィトン・グッチ等）</td><td>本物と確認できるもの</td><td><span class="badge">高価買取</span></td></tr>
-            <tr><td>腕時計（ロレックス・オメガ等）</td><td>動作品優遇・箱ありさらに優遇</td><td><span class="badge">高価買取</span></td></tr>
-            <tr><td>ジュエリー・アクセサリー</td><td>素材確認あり</td><td>金・プラチナ・ダイヤ優遇</td></tr>
-            <tr><td>財布・小物</td><td>使用感あっても査定可</td><td>—</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <div class="service-block">
-      <h3>📚 本・メディア・ゲーム</h3>
+      <h3>🏠 遺品整理</h3>
+      <p style="color:var(--text-light); line-height:1.85; margin-bottom:16px;">
+        ご家族が亡くなった後の部屋の片付けを、丁寧にお手伝いします。家具・家電・衣類・日用品など、すべてまとめてお引き取りします。売れるものは買取し、料金から差し引きます。
+      </p>
       <div class="tag-list">
-        <span class="tag">漫画・コミック</span>
-        <span class="tag">小説・文庫本</span>
-        <span class="tag">ゲームソフト（Switch・PS5等）</span>
-        <span class="tag">ゲーム機本体</span>
-        <span class="tag">CD・DVD・Blu-ray</span>
-        <span class="tag">レコード</span>
-        <span class="tag">トレーディングカード</span>
+        <span class="tag">家具・家電一式</span>
+        <span class="tag">衣類・寝具</span>
+        <span class="tag">食器・日用品</span>
+        <span class="tag">書類・本類</span>
+        <span class="tag">仏壇・位牌（要相談）</span>
+        <span class="tag">貴重品の仕分けサポート</span>
       </div>
     </div>
 
+    <!-- 不用品回収 -->
     <div class="service-block">
-      <h3>🧸 ホビー・スポーツ・その他</h3>
+      <h3>📦 不用品回収・処分</h3>
+      <p style="color:var(--text-light); line-height:1.85; margin-bottom:16px;">
+        使わなくなった家具・家電・雑品など、1点からまとめてまで対応します。粗大ごみの手配が面倒な方もお任せください。運び出しから処分まで一括で行います。
+      </p>
       <div class="tag-list">
-        <span class="tag">フィギュア・プラモデル</span>
-        <span class="tag">鉄道模型</span>
-        <span class="tag">自転車</span>
-        <span class="tag">釣り道具</span>
-        <span class="tag">ゴルフ用品</span>
-        <span class="tag">アウトドア用品</span>
-        <span class="tag">楽器</span>
-        <span class="tag">工具</span>
-        <span class="tag">ベビー用品</span>
+        <span class="tag">📺 テレビ・冷蔵庫・洗濯機</span>
+        <span class="tag">🛋️ ソファ・ベッド・タンス</span>
+        <span class="tag">📚 本・CD・衣類</span>
+        <span class="tag">🚴 自転車</span>
+        <span class="tag">🧸 おもちゃ・ホビー</span>
+        <span class="tag">🔧 工具・雑品</span>
+      </div>
+    </div>
+
+    <!-- 引越し前片付け -->
+    <div class="service-block">
+      <h3>🚛 引越し前の片付け・大掃除</h3>
+      <p style="color:var(--text-light); line-height:1.85; margin-bottom:16px;">
+        引越し前に不要なものをまとめて処分したい方へ。残置物の回収から部屋の片付けまで対応します。引越し業者と別日でも、当日でもご相談ください。
+      </p>
+      <div class="tag-list">
+        <span class="tag">残置物一式の回収</span>
+        <span class="tag">大型家具・家電の搬出</span>
+        <span class="tag">引越し後の空き家片付け</span>
+        <span class="tag">賃貸退去前の整理</span>
+      </div>
+    </div>
+
+    <!-- 買取（サブ） -->
+    <div class="service-block">
+      <h3>💰 買取・出張査定（オプション）</h3>
+      <p style="color:var(--text-light); line-height:1.85; margin-bottom:16px;">
+        回収品の中に価値のあるものがあれば、その場で査定・買取します。買取額は回収料金から差し引くため、実質的な費用を抑えることができます。買取のみのご依頼はお断りする場合があります。
+      </p>
+      <div class="tag-list">
+        <span class="tag">家電製品</span>
+        <span class="tag">ブランド品・貴金属</span>
+        <span class="tag">カメラ・レンズ</span>
+        <span class="tag">ゲーム機・スマートフォン</span>
+        <span class="tag">工具・アウトドア用品</span>
       </div>
     </div>
 
     <div class="notice-box">
-      <strong>⚠️ 買取できないもの（一例）</strong><br>
-      食品・医薬品・下着類・危険物・偽ブランド品・盗品疑いのあるもの・動物・植物など。<br>
-      不明な場合はお気軽にLINEでご相談ください。本人確認書類（免許証等）のご提示をお願いしています。
+      <strong>⚠️ 回収できないもの（一例）</strong><br>
+      食品・医薬品・危険物（ガスボンベ・塗料等）・産業廃棄物・タイヤ・ピアノ・動物・植物など。<br>
+      不明な場合はお気軽にLINEでご相談ください。
     </div>
 
-    <!-- 出張買取 -->
+    <!-- 料金案内 -->
     <div style="margin-top:72px;">
-      <h2 class="section-title" style="margin-bottom:16px;">出張買取サービス</h2>
-      <p class="section-subtitle">大量・大型品はお家まで伺います（品川区内・近隣エリア対応）</p>
+      <h2 class="section-title" style="margin-bottom:16px;">料金の目安</h2>
+      <p class="section-subtitle">現地の状況により変わります。まずはご相談ください。</p>
+
+      <div style="overflow-x:auto;">
+        <table class="price-table">
+          <thead>
+            <tr>
+              <th>サービス内容</th>
+              <th>料金の目安</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>不用品回収 ／ 軽トラック1台分</td>
+              <td class="price-val">15,000円〜</td>
+            </tr>
+            <tr>
+              <td>不用品回収 ／ 2tトラック1台分</td>
+              <td class="price-val">35,000円〜</td>
+            </tr>
+            <tr>
+              <td>遺品整理 ／ 1K・1R</td>
+              <td class="price-val">30,000円〜</td>
+            </tr>
+            <tr>
+              <td>遺品整理 ／ 1LDK</td>
+              <td class="price-val">50,000円〜</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <ul class="price-notes">
+        <li>※ 品川区・東京23区内は出張費無料</li>
+        <li>※ 買取できるものがある場合は、買取額を料金から差し引きます</li>
+        <li>※ 上記はあくまで目安です。量・内容・階数・アクセスなどにより変わります</li>
+        <li>※ 現地確認後に正式なお見積りをご提示します。お見積りは無料です</li>
+      </ul>
+    </div>
+
+    <!-- 特徴カード -->
+    <div style="margin-top:72px;">
+      <h2 class="section-title" style="margin-bottom:16px;">サービスの特徴</h2>
+      <p class="section-subtitle">品川区・東京23区内に出張対応</p>
       <div class="card-grid">
         <div class="card">
           <div class="card-icon">🚚</div>
-          <h3>無料出張・無料見積</h3>
-          <p>出張費・見積費は一切かかりません。品川区内および近隣区は当日対応可能な場合があります。</p>
+          <h3>23区内は出張費無料</h3>
+          <p>品川区をはじめ東京23区内への出張費はかかりません。重い荷物の運び出しもお任せください。</p>
         </div>
         <div class="card">
-          <div class="card-icon">📦</div>
-          <h3>まとめ買取で高査定</h3>
-          <p>引越しや遺品整理など大量の場合はまとめて査定。点数が多いほど有利な場合があります。</p>
+          <div class="card-icon">📋</div>
+          <h3>現地無料お見積り</h3>
+          <p>お見積りは無料です。ご納得いただけない場合は断っていただいて構いません。</p>
         </div>
         <div class="card">
           <div class="card-icon">💰</div>
-          <h3>その場で現金お渡し</h3>
-          <p>査定額にご納得いただいた後、その場で現金をお渡しします。</p>
+          <h3>買取で費用を削減</h3>
+          <p>売れるものは買取し、回収料金から差し引きます。実質的な費用を抑えられます。</p>
         </div>
       </div>
     </div>
@@ -210,8 +261,8 @@
 
 <!-- LINE CTA -->
 <section class="contact-section">
-  <h2>売りたいものがあれば<br>まずLINEへ！</h2>
-  <p>写真を送るだけで無料査定。お気軽にどうぞ。</p>
+  <h2>まずはLINEでご相談ください</h2>
+  <p>回収・遺品整理のご相談・お見積りは無料。お気軽にどうぞ。</p>
   <div class="line-contact-wrap">
     <div class="line-btn-group">
       <a href="https://line.me/R/ti/p/@436kheac" class="btn-line" target="_blank" rel="noopener">
@@ -221,7 +272,7 @@
             <path d="M38.4 25.4h-5.8a.6.6 0 0 1-.6-.6v-9a.6.6 0 0 1 .6-.6h5.8c.3 0 .6.3.6.6v1.4c0 .3-.3.6-.6.6h-3.8v1.4h3.8c.3 0 .6.3.6.6v1.4c0 .3-.3.6-.6.6h-3.8v1.4h3.8c.3 0 .6.3.6.6v1.4c0 .3-.3.6-.6.6zm-8.6 0h-1.6a.6.6 0 0 1-.6-.6v-9c0-.3.3-.6.6-.6h1.6c.3 0 .6.3.6.6v9c0 .3-.3.6-.6.6zm-3.4 0h-5.8a.6.6 0 0 1-.6-.6v-9c0-.3.3-.6.6-.6h1.6c.3 0 .6.3.6.6v7h3.6c.3 0 .6.3.6.6v1.4c0 .3-.3.6-.6.6zm-8.6 0h-1.6a.6.6 0 0 1-.6-.6v-9c0-.3.3-.6.6-.6h1.6c.3 0 .6.3.6.6v9c0 .3-.3.6-.6.6z" fill="#fff"/>
           </svg>
         </span>
-        LINEで無料査定する
+        LINEで無料相談する
       </a>
       <span class="line-btn-sub">「リサイクル高木」で友だち検索</span>
     </div>
@@ -233,6 +284,7 @@
 </section>
 
 <!-- FOOTER -->
+
 <footer>
   <img src="丸ロゴ完成.jpg" alt="リサイクル高木" class="footer-logo">
   <div class="footer-nav">
